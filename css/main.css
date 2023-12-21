@@ -1,0 +1,200 @@
+
+  .foo {
+    cursor: url(favicon_16x16.jpg),auto;}
+
+    .custom {
+      /* The second value here is a fallback. */
+      cursor: url(img/favicon_16x16.jpg), auto;
+    
+      /* You may need coordinates to adjust the pointer
+         for example, the custom cursor is circular and you want
+         the middle to be where you click */
+      cursor: url(target.svg) 15 15, auto;
+    }
+.graph{
+    padding: 30px;
+    width: 90%;
+    height: auto;
+    align-content: center;
+}
+
+.container-description{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: #01192D;
+    color: white;
+    
+}
+.container{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+/*Grid container footer*/
+.grid-container {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 150px 150px 150px; /*Make the grid smaller than the container*/
+  gap: 10px;
+  background-color: #01192D;
+}
+
+.grid-container > div {
+/*  background-color: rgba(255, 255, 255, 0.8);*/
+  text-align: center;
+  padding: 0px 0;
+  font-size: 12px;
+
+}
+/*Grid container footer*/
+
+.quicklinks{
+    color:white;
+    background-color:#01192D;
+    font-display: fallback;
+    line-height: 2.5;
+    padding:50px;
+}
+
+  .footer {
+    /* position: absolute; to fix later */
+    bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: yellow;
+    text-align: center;
+  }
+
+  .header {
+    background-color: #01192D;
+    padding: 10px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: white;
+  }
+
+  h2{
+    color: #009568;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  h3{
+    color: black;
+
+  }
+
+  p{
+    color: black;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .bold-bigger{
+    color: black;
+    font-size:20px;
+    font-weight: 600;
+  }
+
+  /* a.one link */
+  a.one:link {
+    color: black;
+  }
+
+  /* visited link */
+  a.one:visited {
+    color: black;
+  }
+
+  /* mouse over link */
+  a.one:hover {
+    color: #009568;
+  }
+
+  /* a.two link */
+  a.two:link {
+    color: white;
+  }
+
+  /* visited link */
+  a.two:visited {
+    color: white;
+  }
+
+  /* mouse over link */
+  a.two:hover {
+    color: #009568;
+  }
+
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+.my-row {
+    margin-left: 25px;
+}
+/*.row{margin-right:150px;margin-left:150px}*/
+
+.ul-fix{
+  position: fixed;
+}
+
+/* Create two equal columns that floats next to each other */
+.column-illustration {
+  float: right;
+  width: 50%;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row-illustration:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.brandcompass {
+  background-image: url(img/brand_compass.jpg);
+  background-repeat: no-repeat;
+  width: auto; /*or your image's width*/
+  height: auto; /*or your image's height*/
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
+  padding: 20px;
+}
+
+.hide-text{
+    display:none;
+}
+
+.hide-img{
+    display:block;
+}
+
+@media screen and (max-width: 900px) {
+  .hide-text {
+    display: block;          
+      }
+    .hide-img {
+        display: none;
+    }
+  }
